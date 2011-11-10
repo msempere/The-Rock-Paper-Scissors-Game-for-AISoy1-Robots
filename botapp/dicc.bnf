@@ -1,0 +1,12 @@
+#ABNF 1.0 ISO8859-1;
+
+$afirmacion = si|claro|venga;
+$negacion = no|nunca|jamas;
+public $si = $afirmacion (vamos a jugar);
+public $no = $negacion (quiero jugar mas);
+public $uno = uno ;
+public $dos = dos ;
+public $tres = tres ;
+public $cuatro = cuatro ;
+public $cinco = cinco ;
+public $infinito = infinito;

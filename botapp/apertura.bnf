@@ -1,0 +1,39 @@
+#ABNF 1.0 ISO8859-1;
+// Coloquo
+// AISoy 1 1.1
+// Aisoy Robotics, 2010
+
+// Seccion general
+//
+$nombrebot = bot;
+$nombregenerator = aisoy;
+
+// Palabras prohibidas
+$palabrotas = eres( un| una) (bobo|boba|cabron|cabrona|cabronazo|cabronaza|capullo|capulla|estupido|estupida|gilipollas|idiota|maricon|mariconazo|tonto|tonta);
+$saludo = hola|escucha|como estas|que tal estas|como te va|que tal|que pasa|buenos dias|buenas tardes|buenas noches;
+
+$apelativo = campeon|colega|monstruo|crack|chato|chata;
+$despedida = hasta luego|hasta pronto|nos vemos|hasta la vista|adios|hasta manyana;
+
+
+public $menu = $nombrebot pasa al menu aisoy;
+public $decir_palabrota = $GARBAGE $palabrotas;
+public $saludar = [$nombrebot] $saludo [ $apelativo | $nombrebot ] | [$saludo] (cual es tu nombre|como te llamas) | $saludo me llamo $GARBAGE |$nombrebot (este es|te presento a| saluda a| mi nombre es) $GARBAGE;
+public $querer = $nombrebot (te quiero | te adoro) ;
+public $estado = $nombrebot (que tal estas|que te pasa|estas triste|quien soy yo);
+//public $apetecer = $nombrebot (me apetece|tengo ganas de) $GARBAGE;
+public $aburrir = $nombrebot (me aburro|que rollo|que rollazo|vaya rollo|vaya rollazo|cuentame algo divertido| alegrame un poco);
+public $hambre= $nombrebot (tengo|tienes) hambre;
+public $poder = $nombrebot (puedo darte comida|puedes comer|te puedo mojar|te puedo lavar);
+public $temor = $nombrebot (tengo|tienes) miedo;
+public $cantar = $nombrebot vamos a cantar;
+public $enfermo = $nombrebot estoy (enfermo|enferma|malo|mala|mal);
+public $adular = $nombrebot eres [muy] (guapo|bonito|simpatico|listo|inteligente);
+public $tener = [$nombrebot] (que|hace|tengo) (frio|calor)|$nombrebot tienes (frio|calor);
+public $despedir =  $nombrebot (dejame (tranquilo|descansar|en paz)|apagate|parar);
+public $ircama = $nombrebot (me voy|me marcho) (a dormir|a la camita|a la cama|al sobre);
+public $irse = $nombrebot ([me voy |me marcho ]$despedida[ $apelativo]|me voy|me marcho|despidete);
+public $disculpar = $nombrebot (perdoname|me disculpas|disculpame|me perdonas|te pido perdon|te pido disculpas|lo siento);
+public $ayuda = $nombrebot  ([dime las] opciones|repite|puedes repetir);
+public $dondeestoy = $nombrebot donde estamos;
+public $home = $nombrebot (sal del menu|salir);

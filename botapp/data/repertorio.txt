@@ -1,0 +1,7 @@
+si
+no
+uno
+dos 
+tres
+cuatro 
+cinco

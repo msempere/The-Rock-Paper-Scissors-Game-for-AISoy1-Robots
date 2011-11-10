@@ -1,0 +1,14 @@
+#ABNF 1.0 ISO8859-1;
+
+public $sentence0 = "uno" ;
+public $sentence1 = "dos" ;
+public $sentence2 = "tres" ;
+public $sentence3 = "cuatro" ;
+public $sentence4 = "cinco" ;
+public $sentence5 = "seis" ;
+public $sentence6 = "siete" ;
+public $sentence7 = "ocho" ;
+public $sentence8 = "nueve" ;
+public $sentence9 = "diez" ;
+public $sentence10 = "pi" ;
+public $sentence11 = "euler" ;
